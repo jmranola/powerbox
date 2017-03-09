@@ -1,13 +1,13 @@
 ###########
 # site.url, site.title
 
-title: ' practice Website'
+title: 'Welcome to PowerBox'
 
 ## note: 
 #  use site.path in your templates to make it work for both protocols e.g. http and https
 #  use site.url only inside the web feed template (e.g. requires full url incl. protocol)
-path: /practice
-url:  '/practice'
+path: /powerbox
+url:  '/powerbox'
 
 
 ########
@@ -19,7 +19,7 @@ sass:
   sass_dir: css
   style: expanded 
 
-baseurl: /practice
+baseurl: /powerbox
 exclude: ['README.md']
 
 port: 4000
