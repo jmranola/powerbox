@@ -1,0 +1,30 @@
+<div class="uk-section uk-section-muted uk-text-center" id="team">
+    <h2>Our Team</h2>
+    <div  style="padding-bottom: 30px; margin-top:50px;">
+        <div class="uk-grid-match uk-child-width-1-3@m" uk-grid  uk-grid uk-scrollspy="cls: uk-animation-fade; target: > div; delay: 500; repeat: true" >
+
+            <!-- insert for -->
+            {% for post in site.posts %}
+
+                <div>
+                    <p><img class="uk-border-circle" src="images/team/{{ post.avatar }}" width="200" height="200" alt="Border circle"></p>
+                    <h4>{{ post.name }}</h4>
+                    <p class="subtitle">{{ post.position}}</p>
+                </div>
+
+            {% endfor %}
+            {% for post in site.posts %}
+
+                <div>
+                    <p><img class="uk-border-circle" src="images/team/{{ post.avatar }}" width="200" height="200" alt="Border circle"></p>
+                    <h4>{{ post.name }}</h4>
+                    <p class="subtitle">{{ post.position}}</p>
+                </div>
+
+            {% endfor %}
+            
+            
+        </div>
+
+    </div>
+</div>

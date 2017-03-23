@@ -144,15 +144,16 @@ nav {
 }
 
 .bg-container {
-	background: #c00;
+	/*background: #c00;*/
+	background-image: url('../images/bg2.jpeg');
+	background-size: cover;
+	background-attachment: fixed;
 	height:80vh;
 }
 
 .sub-container {
-	background:url('../images/file-bg.png');
-	background-size: cover;
+	background: rgba(0,0,0,0.4);
 	height:100%;
-	background-position: center;
 }
 
 .sub-container h1 {
@@ -368,6 +369,9 @@ nav {
 .secondary-container {
 	padding-top: 150px;
 }
+#security-box div {
+	padding:10px !important;
+}
 #file-upload {
 	background-color: #eee;
 }
@@ -398,4 +402,35 @@ nav {
     overflow: hidden;
     font-weight: 300;
     color: #c00;
+}
+
+/*Features*/
+
+#features-01 {
+	padding-top: 130px;
+}
+
+/*About Us*/
+
+#team {
+	background-color: #FFF;
+}
+
+#mission div{
+	height:300px;
+}
+#history {
+	background-image: url(../images/history-min.jpeg);
+	background-attachment: fixed;
+	background-size: cover;
+}
+.overlay {
+	background: rgba(237,237,237,0.5);
+	background: -moz-linear-gradient(left, rgba(237,237,237,0.5) 0%, rgba(246,246,246,0.77) 53%, rgba(255,255,255,1) 100%);
+	background: -webkit-gradient(left top, right top, color-stop(0%, rgba(237,237,237,0.5)), color-stop(53%, rgba(246,246,246,0.77)), color-stop(100%, rgba(255,255,255,1)));
+	background: -webkit-linear-gradient(left, rgba(237,237,237,0.5) 0%, rgba(246,246,246,0.77) 53%, rgba(255,255,255,1) 100%);
+	background: -o-linear-gradient(left, rgba(237,237,237,0.5) 0%, rgba(246,246,246,0.77) 53%, rgba(255,255,255,1) 100%);
+	background: -ms-linear-gradient(left, rgba(237,237,237,0.5) 0%, rgba(246,246,246,0.77) 53%, rgba(255,255,255,1) 100%);
+	background: linear-gradient(to right, rgba(237,237,237,0.5) 0%, rgba(246,246,246,0.77) 53%, rgba(255,255,255,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ededed', endColorstr='#ffffff', GradientType=1 );
 }
