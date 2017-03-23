@@ -434,3 +434,11 @@ nav {
 	background: linear-gradient(to right, rgba(237,237,237,0.5) 0%, rgba(246,246,246,0.77) 53%, rgba(255,255,255,1) 100%);
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ededed', endColorstr='#ffffff', GradientType=1 );
 }
+
+.uk-navbar-nav > li > a{
+	font-size: 18px;
+}
+button.uk-button {
+    padding: 5px 20px;
+    font-size: 16px;
+}
