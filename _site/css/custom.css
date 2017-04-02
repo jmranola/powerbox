@@ -1,16 +1,25 @@
-@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,500,700");
+@import url("https://fonts.googleapis.com/css?family=Hind+Siliguri:300,400,500,700");
 body
 {
     width:100%;
     margin-left:auto;
     margin-right:auto;
-    font-family: 'Roboto' !important;
-	font-weight: 300;
+    font-family: 'Open Sans' !important;
+	font-weight: 500;
+}
+
+.subtitle-top {
+    font-family: "Open Sans",Arial;
+    font-weight: 400;
+    font-size: 12.6px;
+    color: #787878;
+    text-transform: uppercase;
 }
 
 h1, .uk-h1, h2, .uk-h2, h3, .uk-h3, h4, .uk-h4, h5, .uk-h5, h6, .uk-h6 {
     margin: 0 0 20px 0;
-    font-family: 'Roboto',-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-family: 'Hind Siliguri',-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
     font-weight: 700;
     color: #333;
     text-transform: none;
@@ -79,9 +88,10 @@ nav {
 }
 
 .features {
+	background-color: #f9f9f9;
 }
 .features img{
-	width: 120px;
+	width: auto;
 	height: 120px;
 }
 .features h3 {
@@ -93,7 +103,7 @@ nav {
 	font-weight: 300;
 }
 .secondary-nav {
-	background: #c00;
+	background: #fff;
 	transition: background 0.2s ease-in;
 	border-bottom: 1px solid #eee;
 }
@@ -131,6 +141,9 @@ nav {
 .change-nav .uk-navbar-nav > li > a {
 	color: #333;
 }
+.secondary-nav .uk-navbar-nav > li > a {
+	color: #333;
+}
 
 .laptop-overlay {
 	position: absolute;
@@ -144,16 +157,22 @@ nav {
 }
 
 .bg-container {
-	/*background: #c00;*/
-	background-image: url('../images/bg2.jpeg');
-	background-size: cover;
-	background-attachment: fixed;
-	height:80vh;
-}
+	background: #c00;
+	background-image: none !important;
 
+}
 .sub-container {
-	background: rgba(0,0,0,0.4);
-	height:100%;
+/*	background: rgba(168,2,2,1);
+	background: -moz-linear-gradient(left, rgba(168,2,2,1) 0%, rgba(204,0,0,1) 100%);
+	background: -webkit-gradient(left top, right top, color-stop(0%, rgba(168,2,2,1)), color-stop(100%, rgba(204,0,0,1)));
+	background: -webkit-linear-gradient(left, rgba(168,2,2,1) 0%, rgba(204,0,0,1) 100%);
+	background: -o-linear-gradient(left, rgba(168,2,2,1) 0%, rgba(204,0,0,1) 100%);
+	background: -ms-linear-gradient(left, rgba(168,2,2,1) 0%, rgba(204,0,0,1) 100%);
+	background: linear-gradient(to right, rgba(168,2,2,1) 0%, rgba(204,0,0,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a80202', endColorstr='#cc0000', GradientType=1 );*/
+	background: url('../images/file-bg.png');
+	background-size: cover;
+	height:90vh;
 }
 
 .sub-container h1 {
@@ -216,6 +235,7 @@ nav {
   background-color: #222;
   color: #fff;
   border: 1px solid transparent;
+  font-weight: bold;
 }
 /* Hover + Focus */
 .uk-button-secondary:hover,
@@ -266,6 +286,7 @@ nav {
 	padding: 0;
     margin: 0;
     width: 100%;
+    background-color: #FFF;
 }
 .product img {
 }
@@ -287,8 +308,8 @@ nav {
 }
 
 #security {
-	background-color:#c00;
-	background:url('../images/bg.png');
+	background-color:#313133;
+	/*background:url('../images/bg.png');*/
 	color: #fff;
 	background-attachment: fixed;
 }
@@ -301,18 +322,23 @@ nav {
 }
 
 #integrations img {
-  width: 200px;
+  width: 400px;
   -webkit-filter: grayscale(100%);
   /* Safari 6.0 - 9.0 */
   filter: grayscale(100%);
   transition: filter 0.1s;
-  margin: 0% 5%;
+  margin: 10% 5%;
 }
 
 #integrations img:hover {
   -webkit-filter: none;
   filter: none;
   transition-timing-function: ease-in;
+}
+
+ #overall
+{
+	background-color: #fff;
 }
 
 .loader {
@@ -328,7 +354,7 @@ nav {
 .btn-nav {
 	margin-top: 25px !important;
 	height: 40px !important;
-	width: 100px !important;
+	width: 130px !important;
 }
 .change-nav .btn-nav {
 	border: 1px solid #c00;
@@ -368,12 +394,13 @@ nav {
 /*Security*/
 .secondary-container {
 	padding-top: 150px;
+	background-color: #fff;
 }
 #security-box div {
 	padding:10px !important;
 }
 #file-upload {
-	background-color: #eee;
+	background-color: #f9f9f9;
 }
 #server {
 	background-color: #fff;
@@ -385,7 +412,7 @@ nav {
 	background-color: #fff;
 }
 #backend {
-	background-color: #eee;
+	background-color: #f9f9f9;
 }
 #backend .uk-grid-match {
 	padding: 0% 20%;
@@ -407,6 +434,7 @@ nav {
 /*Features*/
 
 #features-01 {
+	background-color: #fff;
 	padding-top: 130px;
 }
 
@@ -417,7 +445,7 @@ nav {
 }
 
 #mission div{
-	height:300px;
+	height:410px;
 }
 #history {
 	background-image: url(../images/history-min.jpeg);
@@ -436,9 +464,47 @@ nav {
 }
 
 .uk-navbar-nav > li > a{
-	font-size: 18px;
+	font-size: 14px;
+	font-weight: bold;
 }
-button.uk-button {
-    padding: 5px 20px;
-    font-size: 16px;
+.uk-button {
+    padding: 10px 25px;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    border-radius: 0px !important;
+}
+
+.uk-tab > .uk-active > a {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+.switcher img{
+	-webkit-filter: grayscale(100%);
+	/* Safari 6.0 - 9.0 */
+	filter: grayscale(100%);
+	transition: filter 0.1s;
+}
+.switcher > .uk-active > a {
+    background-color: #eee;
+	display: inline-block;
+}
+.switcher > .uk-active img {
+	 -webkit-filter:  none;
+	/* Safari 6.0 - 9.0 */
+	filter: none;
+	transition: filter 0.1s;
+}
+
+ul.switcher {
+    margin:0;
+    padding:0;
+    text-align: center;	
+    list-style:none;
+}
+ul.switcher	li {
+     padding: 2px 5px;	
+     display: inline;			
 }
