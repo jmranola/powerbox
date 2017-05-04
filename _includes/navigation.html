@@ -53,10 +53,10 @@
 		                    <div uk-dropdown="pos: top-right">
 						        <ul class="uk-nav uk-dropdown-nav" style="width: 200px;">
 						            <li class="uk-nav-header uk-text-center"><strong>CONNECT WITH</strong> </li>
-						            <li><a href="#sign-in-corp-sso" uk-toggle class="uk-button uk-button-default"><span class="uk-margin-small-right uk-icon" uk-icon="icon: user"></span> Corp. SSO</a></li>
+						            <li><a href="#sign-in-corp-sso" uk-toggle class="uk-button uk-button-default"><span class="uk-margin-small-right uk-icon" uk-icon="icon: user"></span>Corp. SSO</a></li>
+						            <li><a href="#" class="uk-button uk-button-default"><img src="{{ site.baseurl }}/images/icn-salesforce.png" />&nbsp;Salesforce</a></li>
 						            <li><a href="#" class="uk-button uk-button-default"><img src="{{ site.baseurl }}/images/icn-zendesk.png" />&nbsp;Zendesk</a></li>
 						            <li><a href="#" class="uk-button uk-button-default"><span class="uk-margin-small-right uk-icon" uk-icon="icon: google"></span>Google</a></li>
-						            <li><a href="#" class="uk-button uk-button-default"><img src="{{ site.baseurl }}/images/icn-salesforce.png" />&nbsp;Salesforce</a></li>
 						            <li class="uk-nav-divider"></li>
 						            <li><a class="uk-button uk-button-secondary"  href="#sign-in-powerbox" uk-toggle style="background-color: #c00; color: #fff;">Sign In</a></li>
 						        </ul>
@@ -78,6 +78,7 @@
 
 <div id="sign-in-corp-sso" uk-modal>
     <div class="uk-modal-dialog uk-modal-body">
+    	<button class="uk-modal-close-default" type="button" uk-close></button>
         <h2 class="uk-modal-title"><img src="{{ site.baseurl }}/images/icn-trend.png" style="float:left" /> &nbsp;Single Sign On <span class="uk-text-muted uk-text-small">with Trend Micro</span></h2>
         
 		<form class="uk-form-stacked">
