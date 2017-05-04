@@ -68,7 +68,7 @@
 		                <li>
 		                    <a href="#" type="button"><i class="fa fa-user-circle-o" aria-hidden="true"></i>&nbsp;Sign In</a>
 		                    <div uk-dropdown="pos: top-right">
-						        <ul class="uk-nav uk-dropdown-nav" style="width: 300px;">
+						        <ul class="uk-nav uk-dropdown-nav" style="width: 200px;">
 						            <li class="uk-nav-header uk-text-center"><strong>CONNECT WITH</strong> </li>
 						            <li><a href="#sign-in-corp-sso" uk-toggle class="uk-button uk-button-default"><span class="uk-margin-small-right uk-icon" uk-icon="icon: user"></span> Corp. SSO</a></li>
 						            <li><a href="#" class="uk-button uk-button-default"><img src="/powerbox/images/icn-zendesk.png" />&nbsp;Zendesk</a></li>
@@ -90,6 +90,8 @@
 		    <div class="uk-navbar-dropbar" ></div>
     </div>
 </div>
+
+<!-- Sign In Page for Corp SSO -->
 
 <div id="sign-in-corp-sso" uk-modal>
     <div class="uk-modal-dialog uk-modal-body">
@@ -114,12 +116,13 @@
 		</form>
 
         <p class="uk-text-right">
-            <a class="uk-modal-close" style="float:left;">Go Back</a>
-            <button class="uk-button uk-button-secondary" type="button">Login to PowerBox</button>
+            <a style="float:left;">Forgot Password</a>
+            <button class="uk-button uk-button-secondary" type="button">Sign In</button>
         </p>
     </div>
 </div>
 
+<!-- Sign In Page for PowerBox -->
 
 <div id="sign-in-powerbox" class="uk-modal-full" uk-modal>
     <div class="uk-modal-dialog">
@@ -127,7 +130,7 @@
         <div class="uk-grid-collapse uk-child-width-1-2@s uk-flex-middle" uk-grid>
             <div class="uk-background-cover" style="background-image: url(/powerbox/images/side-photo.png);" uk-height-viewport></div>
             <div class="uk-padding-large">
-                <h1>Sign In</h1>
+                <h1>Sign In <span class="uk-text-muted " style="float:right; line-height: 50px; font-size: 17px;">or <a>Create an Account <i class="fa fa-angle-right" aria-hidden="true"></i></a></span></h1>
                 <form class="uk-form-stacked">
 
 				    <div class="uk-margin">
@@ -144,6 +147,7 @@
 				        </div>
 				    </div>
 					<p class="uk-text-right">
+            			<a style="float:left;">Forgot Password</a>
 			            <button class="uk-button uk-button-secondary" type="button">Sign In</button>
 			        </p>
             </div>
