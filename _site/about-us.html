@@ -19,8 +19,12 @@
     <div class="uk-position-top">
         	<nav class="uk-navbar-container  uk-navbar-transparent secondary-nav" uk-navbar uk-sticky="bottom: #offset" style="padding: 0px 20px;">
 		        <div class="uk-navbar-left">
-
-		            <ul class="uk-navbar-nav">
+					<ul class="uk-navbar-nav" id="mobile-menu" style="display: none;">
+						<li>
+		                    <span href="/powerbox/"><a uk-toggle="target: #offcanvas-flip"><span class="uk-icon-link uk-margin-small-right" uk-icon="icon: menu"></span></a><img class="logo-small" src="/powerbox/images/tm-logo.png"/> <strong>Powerbox </strong></span>
+		                </li>
+		            </ul>
+		            <ul class="uk-navbar-nav" id="desktop-menu">
 		                <li>
 		                    <a href="/powerbox/"><img class="logo-small" src="/powerbox/images/tm-logo.png"/></a>
 		                </li>
@@ -44,25 +48,36 @@
 		                	<a href="/powerbox/about-us">About Us</a>
 		                </li>
 		                <li>
-		                	<a href="">Learn More</a>
-		                	<div class="uk-navbar-dropdown"  uk-sticky="bottom: #offset">
-			                    <ul class="uk-nav uk-navbar-dropdown-nav">
+		                	<a href="#" type="button">Learn More</a>
+		                	<div uk-dropdown="mode: click">
+								<ul class="uk-nav uk-navbar-dropdown-nav">
 			                        <li class="uk-active"><a href="#">Blog/Articles</a></li>
 			                        <li><a href="#">Video Guides</a></li>
 			                        <li><a href="#">User Guides</a></li>
 			                        <li><a href="#">FAQs</a></li>
 			                    </ul>
-			                </div>
+		                	</div>
 		                </li>
 		            </ul>
 
 		        </div>
 
-		        <div class="uk-navbar-right">
+		        <div class="uk-navbar-right" id="desktop-menu-right">
 
 		            <ul class="uk-navbar-nav">
 		                <li>
-		                    <a href="#"><i class="fa fa-user-circle-o" aria-hidden="true"></i>&nbsp;Sign In</a>
+		                    <a href="#" type="button"><i class="fa fa-user-circle-o" aria-hidden="true"></i>&nbsp;Sign In</a>
+		                    <div uk-dropdown="pos: top-right">
+						        <ul class="uk-nav uk-dropdown-nav" style="width: 300px;">
+						            <li class="uk-nav-header uk-text-center"><strong>CONNECT WITH</strong> </li>
+						            <li><a href="#sign-in-corp-sso" uk-toggle class="uk-button uk-button-default"><span class="uk-margin-small-right uk-icon" uk-icon="icon: user"></span> Corp. SSO</a></li>
+						            <li><a href="#" class="uk-button uk-button-default"><img src="/powerbox/images/icn-zendesk.png" />&nbsp;Zendesk</a></li>
+						            <li><a href="#" class="uk-button uk-button-default"><span class="uk-margin-small-right uk-icon" uk-icon="icon: google"></span>Google</a></li>
+						            <li><a href="#" class="uk-button uk-button-default"><img src="/powerbox/images/icn-salesforce.png" />&nbsp;Salesforce</a></li>
+						            <li class="uk-nav-divider"></li>
+						            <li><a class="uk-button uk-button-secondary"  href="#sign-in-powerbox" uk-toggle style="background-color: #c00; color: #fff;">or Sign in Powerbox</a></li>
+						        </ul>
+						    </div>
 		                </li>
 		                <li>
 		                    <a href="#" class="uk-button uk-button-default btn-nav">Sign Up</a>
@@ -74,6 +89,83 @@
 
 		    <div class="uk-navbar-dropbar" ></div>
     </div>
+</div>
+
+<div id="sign-in-corp-sso" uk-modal>
+    <div class="uk-modal-dialog uk-modal-body">
+        <h2 class="uk-modal-title"><img src="/powerbox/images/icn-trend.png" style="float:left" /> &nbsp;Single Sign On <span class="uk-text-muted uk-text-small">with Trend Micro</span></h2>
+        
+		<form class="uk-form-stacked">
+
+		    <div class="uk-margin">
+		        <label class="uk-form-label" for="form-stacked-text"><strong>Username</strong></label>
+		        <div class="uk-form-controls">
+		            <input class="uk-input" id="form-stacked-text" type="text" placeholder="trend\username">
+		        </div>
+		    </div>
+
+			<div class="uk-margin">
+		        <label class="uk-form-label" for="form-stacked-text"><strong>Password</strong></label>
+		        <div class="uk-form-controls">
+		            <input class="uk-input" id="form-stacked-text" type="password" placeholder="********">
+		        </div>
+		    </div>
+
+		</form>
+
+        <p class="uk-text-right">
+            <a class="uk-modal-close" style="float:left;">Go Back</a>
+            <button class="uk-button uk-button-secondary" type="button">Login to PowerBox</button>
+        </p>
+    </div>
+</div>
+
+
+<div id="sign-in-powerbox" class="uk-modal-full" uk-modal>
+    <div class="uk-modal-dialog">
+        <button class="uk-modal-close-full uk-close-large" type="button" uk-close></button>
+        <div class="uk-grid-collapse uk-child-width-1-2@s uk-flex-middle" uk-grid>
+            <div class="uk-background-cover" style="background-image: url(/powerbox/images/side-photo.png);" uk-height-viewport></div>
+            <div class="uk-padding-large">
+                <h1>Sign In</h1>
+                <form class="uk-form-stacked">
+
+				    <div class="uk-margin">
+				        <label class="uk-form-label" for="form-stacked-text"><strong>Username</strong></label>
+				        <div class="uk-form-controls">
+				            <input class="uk-input" id="form-stacked-text" type="text" placeholder="trend\username">
+				        </div>
+				    </div>
+
+					<div class="uk-margin">
+				        <label class="uk-form-label" for="form-stacked-text"><strong>Password</strong></label>
+				        <div class="uk-form-controls">
+				            <input class="uk-input" id="form-stacked-text" type="password" placeholder="********">
+				        </div>
+				    </div>
+					<p class="uk-text-right">
+			            <button class="uk-button uk-button-secondary" type="button">Sign In</button>
+			        </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="uk-offcanvas-content">
+
+
+    <div id="offcanvas-flip" uk-offcanvas="flip: true; overlay: true">
+        <div class="uk-offcanvas-bar">
+
+            <button class="uk-offcanvas-close" type="button" uk-close></button>
+
+            <h3>Title</h3>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+        </div>
+    </div>
+
 </div>
 		
 

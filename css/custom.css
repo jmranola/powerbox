@@ -39,7 +39,7 @@ nav {
 
 /*CSS background*/
 .main-container {
-	background: #c00;
+	background: #D71C2B;
 	/*background-image:url('https://static.pexels.com/photos/27986/pexels-photo-27986.jpg');*/
 	background-image:url('../images/bg.png');
 	background-size: cover;
@@ -77,14 +77,14 @@ nav {
 	background-image: url('../images/description.png');
 }
 .product-background .uk-section {
-	background: rgba(201,255,252,0.47);
+/*	background: rgba(201,255,252,0.47);
 	background: -moz-linear-gradient(-45deg, rgba(201,255,252,0.47) 0%, rgba(76,235,214,0.45) 38%, rgba(140,204,222,0.43) 100%);
 	background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(201,255,252,0.47)), color-stop(38%, rgba(76,235,214,0.45)), color-stop(100%, rgba(140,204,222,0.43)));
 	background: -webkit-linear-gradient(-45deg, rgba(201,255,252,0.47) 0%, rgba(76,235,214,0.45) 38%, rgba(140,204,222,0.43) 100%);
 	background: -o-linear-gradient(-45deg, rgba(201,255,252,0.47) 0%, rgba(76,235,214,0.45) 38%, rgba(140,204,222,0.43) 100%);
 	background: -ms-linear-gradient(-45deg, rgba(201,255,252,0.47) 0%, rgba(76,235,214,0.45) 38%, rgba(140,204,222,0.43) 100%);
 	background: linear-gradient(135deg, rgba(201,255,252,0.47) 0%, rgba(76,235,214,0.45) 38%, rgba(140,204,222,0.43) 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c9fffc', endColorstr='#8cccde', GradientType=1 );
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c9fffc', endColorstr='#8cccde', GradientType=1 );*/
 }
 
 .features {
@@ -157,7 +157,7 @@ nav {
 }
 
 .bg-container {
-	background: #c00;
+	background: #D71C2B;
 	background-image: none !important;
 
 }
@@ -197,8 +197,8 @@ nav {
 /* Hover + Focus */
 .uk-button-default:hover,
 .uk-button-default:focus {
-  background-color: transparent;
-  color: #fff;
+  background-color: #eee;
+  color: #c00;
   border-color: #fff;
 }
 /* OnClick + Active */
@@ -453,14 +453,14 @@ nav {
 	background-size: cover;
 }
 .overlay {
-	background: rgba(237,237,237,0.5);
+/*	background: rgba(237,237,237,0.5);
 	background: -moz-linear-gradient(left, rgba(237,237,237,0.5) 0%, rgba(246,246,246,0.77) 53%, rgba(255,255,255,1) 100%);
 	background: -webkit-gradient(left top, right top, color-stop(0%, rgba(237,237,237,0.5)), color-stop(53%, rgba(246,246,246,0.77)), color-stop(100%, rgba(255,255,255,1)));
 	background: -webkit-linear-gradient(left, rgba(237,237,237,0.5) 0%, rgba(246,246,246,0.77) 53%, rgba(255,255,255,1) 100%);
 	background: -o-linear-gradient(left, rgba(237,237,237,0.5) 0%, rgba(246,246,246,0.77) 53%, rgba(255,255,255,1) 100%);
 	background: -ms-linear-gradient(left, rgba(237,237,237,0.5) 0%, rgba(246,246,246,0.77) 53%, rgba(255,255,255,1) 100%);
 	background: linear-gradient(to right, rgba(237,237,237,0.5) 0%, rgba(246,246,246,0.77) 53%, rgba(255,255,255,1) 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ededed', endColorstr='#ffffff', GradientType=1 );
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ededed', endColorstr='#ffffff', GradientType=1 );*/
 }
 
 .uk-navbar-nav > li > a{
@@ -532,3 +532,56 @@ ul.switcher	li {
 #pricing .uk-text-lead {
 	font-size:40px;
 }
+
+
+#pricing .hover {
+	background-color: #F81717 !important;
+}
+
+#pricing .uk-button-primary {
+	overflow: hidden;
+	position: relative;
+}
+
+#pricing .uk-button-primary:after {
+  background: #fff;
+  content: "";
+  height: 155px;
+  left: -75px;
+  opacity: .2;
+  position: absolute;
+  top: -50px;
+  -webkit-transform: rotate(35deg);
+          transform: rotate(35deg);
+  -webkit-transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+  transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+  width: 50px;
+  z-index: -10;	
+}
+
+
+
+#pricing .uk-button-primary:hover:after {
+  left: 120%;
+  -webkit-transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+  transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+
+#mobile-menu{
+	display: none;
+}
+
+@media screen and (max-width: 600px) {
+	#mobile-menu {
+		display: inline-block;
+	}
+	#desktop-menu {
+		display: none;
+	}
+	#desktop-menu-right {
+		display: none;
+	}
+	
+}
+

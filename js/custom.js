@@ -12,9 +12,17 @@
 
             if (ypos > 10) {  
                 $('nav').addClass('change-nav');
+                
+                if ($(window).width() < 600) {
+                  $('#mobile-menu').fadeIn(100);
+                }
+                else {
+                  $('#mobile-menu').fadeOut(100);
+                }
 
             }else {
                 $('nav').removeClass('change-nav');
+                $('#mobile-menu').fadeOut(100);
             }
     }
 
@@ -78,3 +86,16 @@ $(window).on( "load", function(){
 
 // });
 //  
+﻿
+﻿$(document).ready(function () {
+
+    $(".uk-card").hover(
+      function () {
+        $(this).find(".uk-card-header").addClass('hover');
+      }, 
+      function () {
+        $(this).find(".uk-card-header").removeClass('hover');
+      }
+    );
+});
+
