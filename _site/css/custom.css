@@ -573,6 +573,45 @@ ul.switcher	li {
 }
 
 @media screen and (max-width: 600px) {
+
+	
+}
+
+#desktop-menu-right img {
+	padding-right: 5px;
+}
+
+#product-description {
+	margin-top:100px; 
+	padding:5%;
+}
+
+/*Mobile*/
+
+@charset "utf-8";
+
+/*Extra Small Screen*/
+@media (max-width: 480px) {
+	.hide-in-mobile {
+		display: none !important;
+	}
+	#product-description {
+		margin-top:-100px; 
+		padding:50px !important;
+	}
+	#landing-page-main h1 {
+		font-size: 27px;
+	}
+	.uk-button {
+		display: block;
+	}
+	#security, #integrations {
+	    padding: 7%;
+	}
+}
+
+/*Small Screen*/
+@media (max-width: 768px) {
 	#mobile-menu {
 		display: inline-block;
 	}
@@ -582,9 +621,27 @@ ul.switcher	li {
 	#desktop-menu-right {
 		display: none;
 	}
-	
 }
 
-#desktop-menu-right img {
-	padding-right: 5px;
+
+/*Medium Screen*/
+
+@media (max-width: 1024px) {
+	.brand {
+		display: none !important;
+	}
+}
+
+@media (max-width: 992px) {
+
+}
+
+/*Large Screen*/
+@media (max-width: 1200px) {
+
+}
+
+/*Extra-Large Screen*/
+@media (max-width: 1440px) {
+
 }

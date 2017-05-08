@@ -13,7 +13,7 @@
             if (ypos > 10) {  
                 $('nav').addClass('change-nav');
                 
-                if ($(window).width() < 600) {
+                if ($(window).width() < 768) {
                   $('#mobile-menu').fadeIn(100);
                 }
                 else {
