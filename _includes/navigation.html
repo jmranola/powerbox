@@ -112,7 +112,7 @@
     <div class="uk-modal-dialog">
         <button class="uk-modal-close-full uk-close-large" type="button" uk-close></button>
         <div class="uk-grid-collapse uk-child-width-1-2@s uk-flex-middle" uk-grid>
-            <div class="uk-background-cover" style="background-image: url({{ site.baseurl }}/images/side-photo.png);" uk-height-viewport></div>
+            <div class="uk-background-cover hide-in-mobile" style="background-image: url({{ site.baseurl }}/images/side-photo.png);" uk-height-viewport></div>
             <div class="uk-padding-large">
                 <h1>Sign In <span class="uk-text-muted " style="float:right; line-height: 50px; font-size: 17px;">or <a>Create an Account <i class="fa fa-angle-right" aria-hidden="true"></i></a></span></h1>
                 <form class="uk-form-stacked">
@@ -142,16 +142,34 @@
 <div class="uk-offcanvas-content">
 
 
-    <div id="offcanvas-flip" uk-offcanvas="flip: true; overlay: true">
-        <div class="uk-offcanvas-bar">
-
-            <button class="uk-offcanvas-close" type="button" uk-close></button>
-
-            <h3>Title</h3>
-
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-
-        </div>
+    <div id="offcanvas-flip" uk-offcanvas="overlay: true; mode: push">
+        <div class="uk-offcanvas-bar"  uk-flex uk-flex-column">
+			<h3>Menu</h3>
+            <ul class="uk-nav uk-nav-primary uk-margin-auto-vertical">
+            	<li>
+                	<a href="{{ site.url }}/features">Home</a>
+                </li>
+                <li>
+                	<a href="{{ site.url }}/features">Features</a>
+                </li>
+                <li>
+                	<a href="{{ site.url }}/security">Security</a>
+                </li>
+                <li>
+                	<a href="{{ site.url }}/integrations">Integrations</a>
+                </li>
+                <li>
+                	<a href="{{ site.url }}/pricing">Pricing</a>
+                </li>
+                <li>
+                	<a href="{{ site.url }}/about-us">About Us</a>
+                </li>
+                <li class="uk-nav-header">Sign In</li>
+                <li><a href="#sign-in-powerbox" uk-toggle><span class="uk-margin-small-right" uk-icon="icon: table"></span> Sign In</a></li>
+                <li class="uk-nav-divider"></li>
+                <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: trash"></span> Sign Up</a></li>
+            </ul>
+    	</div>
     </div>
 
 </div>
